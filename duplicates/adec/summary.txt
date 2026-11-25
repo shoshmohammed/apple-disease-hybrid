@@ -1,0 +1,9 @@
+Dataset root           : /content/drive/MyDrive/dataset/ADEC_datasetApple
+Images                 : 2999
+Per split              : {'Train': 2705, 'Test': 294}
+Duplicate pairs (all)  : 2817  (md5=88, phash=1806, dinov2=1735)
+Cross-split pairs      : 447
+Pairs with label clash : 1
+Eval/test images that have a near-duplicate in another split: 158 / 294 (53.74%)
+Duplicate groups (size>1): 471
+Unique images after merging duplicates: 1641

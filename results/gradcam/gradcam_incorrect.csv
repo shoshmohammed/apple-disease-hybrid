@@ -1,0 +1,8 @@
+path,fold,true,pred,confidence
+ADEC/Test/Apple_Blotch/Apple_Blotch (381).jpg,2,Apple_Blotch,Apple_Powdery_mildew,0.9999
+ADEC/Train/Apple_Normal/Apple_Normal (140).jpg,4,Apple_Normal,Apple_Powdery_mildew,0.7186
+ADEC/Test/Apple_Powdery_mildew/Apple_Powdery_mildew  (356).jpg,5,Apple_Powdery_mildew,Apple_Blotch,0.8087
+ADEC/Train/Apple_brown_rot/Apple_brown_rot  (228).jpg,4,Apple_brown_rot,Apple_Powdery_mildew,0.8772
+ADEC/Train/Apple_cork_spots/Apple_cork_spots  (1).jpg,5,Apple_cork_spots,Apple_scab,0.9991
+ADEC/Train/Apple_rot/Apple_rot  (280).jpg,5,Apple_rot,Apple_brown_rot,0.7534
+ADEC/Train/Apple_scab/Apple_scab  (188).jpg,2,Apple_scab,Apple_Powdery_mildew,0.994

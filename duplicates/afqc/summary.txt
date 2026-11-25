@@ -1,0 +1,9 @@
+Dataset root           : /content/drive/MyDrive/dataset/AFQC_datasetApple
+Images                 : 2320
+Per split              : {'Train': 2088, 'Test': 232}
+Duplicate pairs (all)  : 939  (md5=9, phash=448, dinov2=699)
+Cross-split pairs      : 57
+Pairs with label clash : 0
+Eval/test images that have a near-duplicate in another split: 53 / 232 (22.84%)
+Duplicate groups (size>1): 430
+Unique images after merging duplicates: 1585

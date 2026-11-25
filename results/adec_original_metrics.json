@@ -1,0 +1,80 @@
+{
+  "tag": "original",
+  "seed": 42,
+  "backbone": "tf_efficientnet_lite0",
+  "best_epoch": 10,
+  "train_time_s": 694.1,
+  "test": {
+    "n": 294,
+    "correct": 287,
+    "accuracy": 97.61904761904762,
+    "precision": 97.87234042553192,
+    "recall": 97.67975926512513,
+    "f1": 97.69330232405387
+  },
+  "test_clean": {
+    "n": 129,
+    "correct": 125,
+    "accuracy": 96.89922480620154,
+    "precision": 85.36585365853658,
+    "recall": 82.19563687543983,
+    "f1": 83.65979699313033
+  },
+  "per_class": {
+    "Apple_Blotch": {
+      "precision": 0.8936170212765957,
+      "recall": 1.0,
+      "f1-score": 0.9438202247191011,
+      "support": 42.0
+    },
+    "Apple_Normal": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 37.0
+    },
+    "Apple_Powdery_mildew": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 41.0
+    },
+    "Apple_brown_rot": {
+      "precision": 0.9574468085106383,
+      "recall": 1.0,
+      "f1-score": 0.9782608695652174,
+      "support": 45.0
+    },
+    "Apple_cork_spots": {
+      "precision": 1.0,
+      "recall": 0.9512195121951219,
+      "f1-score": 0.975,
+      "support": 41.0
+    },
+    "Apple_rot": {
+      "precision": 1.0,
+      "recall": 0.9545454545454546,
+      "f1-score": 0.9767441860465116,
+      "support": 44.0
+    },
+    "Apple_scab": {
+      "precision": 1.0,
+      "recall": 0.9318181818181818,
+      "f1-score": 0.9647058823529412,
+      "support": 44.0
+    },
+    "accuracy": 0.9761904761904762,
+    "macro avg": {
+      "precision": 0.9787234042553192,
+      "recall": 0.9767975926512512,
+      "f1-score": 0.9769330232405388,
+      "support": 294.0
+    },
+    "weighted avg": {
+      "precision": 0.9782891880156319,
+      "recall": 0.9761904761904762,
+      "f1-score": 0.9763979305381393,
+      "support": 294.0
+    }
+  }
+}

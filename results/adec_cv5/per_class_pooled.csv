@@ -1,0 +1,10 @@
+,precision,recall,f1-score,support
+Apple_Blotch,98.09,95.65,96.86,161.0
+Apple_Normal,99.51,98.54,99.02,205.0
+Apple_Powdery_mildew,95.91,98.6,97.24,214.0
+Apple_brown_rot,99.1,99.4,99.25,332.0
+Apple_cork_spots,96.82,99.35,98.06,153.0
+Apple_rot,99.63,97.83,98.72,277.0
+Apple_scab,97.99,97.99,97.99,299.0
+macro avg,98.15,98.19,98.16,1641.0
+weighted avg,98.31,98.29,98.29,1641.0

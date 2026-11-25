@@ -1,0 +1,9 @@
+Dataset root           : /content/xds
+Images                 : 7284
+Per split              : {'FDD': 5566, 'ADEC': 1718}
+Duplicate pairs (all)  : 5425  (md5=445, phash=1563, dinov2=4754)
+Cross-split pairs      : 386
+Pairs with label clash : 409
+Eval/test images that have a near-duplicate in another split: 0 / 0
+Duplicate groups (size>1): 1031
+Unique images after merging duplicates: 4403
