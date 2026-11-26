@@ -63,12 +63,16 @@ Every split file in `splits/` lists image paths relative to `data/`. The columns
 
 Pass `--data-root data` to the scripts.
 
+**Use the split files provided here.** They are the exact partitions used in the paper. The validation part of each split is drawn with scikit-learn's `StratifiedGroupKFold`, whose shuffling differs between scikit-learn versions, so regenerating the splits with another version may give a slightly different validation set. The test sets are unaffected.
+
 ## Reproducing the paper
 
 | Paper | Command |
 |---|---|
 | Duplicate screening (Section 3.1.1) | `python scripts/check_duplicates.py --root data/ADEC --layout split --out duplicates/adec --emb` |
 | ADEC, original partition (Table 3) | `python scripts/train.py --split splits/adec_original.csv --data-root data --out runs/adec_original` |
+| FDD, original partition (Tables 3-5) | `python scripts/train.py --split splits/fdd_original.csv --data-root data --out runs/fdd_original` |
+| AFQC, original partition (Tables 3 and 6) | `python scripts/train.py --split splits/afqc_original.csv --data-root data --out runs/afqc_original` |
 | Duplicate-aware 5-fold CV (Tables 7 and 8) | `python scripts/run_kfold.py --data-root data --out runs/adec_cv5` |
 | Cross-dataset test (Section 4.5) | `python scripts/train.py --split splits/cross_ADEC_to_FDD.csv --data-root data --out runs/cross_ADEC_to_FDD`, and the same with `cross_FDD_to_ADEC.csv` |
 | Ablation study (Table 10) | `python scripts/ablation.py --data-root data --out runs/adec_cv5` |
@@ -97,6 +101,14 @@ Pass `--data-root data` to the scripts.
 | Seed | 42 |
 
 ## Main results
+
+Original partitions (Table 3 of the paper):
+
+| Dataset | Test images | Accuracy (%) | Precision (%) | Recall (%) | F1-score (%) |
+|---|---|---|---|---|---|
+| FDD | 550 | 100 | 100 | 100 | 100 |
+| AFQC | 232 | 98.71 | 98.71 | 98.71 | 98.71 |
+| ADEC | 294 | 97.62 | 97.87 | 97.68 | 97.69 |
 
 Duplicate-aware five-fold cross-validation on ADEC (mean ± SD over the folds; Table 10 of the paper):
 
